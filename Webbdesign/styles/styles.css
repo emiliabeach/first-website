@@ -1,10 +1,14 @@
 body {
-  background-color: pink;
+  background-color: lightseagreen;
+}
+
+body {font-family: Verdana, sans-serif;
+
 }
 
 img {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
 }
 
 #image-container {
@@ -12,3 +16,32 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: turquoise;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ h1 {
+  color: black;
+ }
+
+ h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
