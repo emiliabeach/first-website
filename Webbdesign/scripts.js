@@ -11,12 +11,12 @@ function geGodis() {
 
   if (godisar === 1) {
     meddelande.innerText = "Voff! Tack för den första godisen!";
-    bild.src = "../images/Tack1godis.jpg";
+    bild.src = "./images/Tack1godis.jpg";
   } else if (godisar === 5) {
     meddelande.innerText = "5 stycken! Nu viftar svansen som en propeller!";
-    bild.src = "../images/NellyYaygodis.jpg";
+    bild.src = "./images/NellyYaygodis.jpg";
   } else if (godisar >= 10) {
     meddelande.innerText = "Stopp! Nu blir Nelly alldeles för mätt och vill sova!";
-    bild.src = "../images/Nellyojgodis.jpg";
+    bild.src = "./images/Nellyojgodis.jpg";
   }
 }
