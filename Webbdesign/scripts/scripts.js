@@ -1,18 +1,22 @@
-// logging to console // 
-console.log("Hello World!")
+let godisar = 0;
 
-let pizza = 50;
+function geGodis() {
+  godisar = godisar + 1;
 
-if (true) {
-console.log(pizza)    
+  const antal = document.getElementById("antal");
+  const bild = document.getElementById("nelly-bild");
+  const meddelande = document.getElementById("meddelande");
+
+  antal.innerText = godisar;
+
+  if (godisar === 1) {
+    meddelande.innerText = "Voff! Tack för den första godisen!";
+    bild.src = "../images/Tack1godis.jpg";
+  } else if (godisar === 5) {
+    meddelande.innerText = "5 stycken! Nu viftar svansen som en propeller!";
+    bild.src = "../images/NellyYaygodis.jpg";
+  } else if (godisar >= 10) {
+    meddelande.innerText = "Stopp! Nu blir Nelly alldeles för mätt och vill sova!";
+    bild.src = "../images/Nellyojgodis.jpg";
+  }
 }
-
-console.log(icon);
-
-let bg = document.getElementById("whole-page"):
-
-bg.style.backgroundColor = 
-
-// 1. let with reference to HTML id
-// 2. "addEventListener with "click" event
-// 3. change some CSS properties of that object inside {}

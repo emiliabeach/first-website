@@ -6,29 +6,51 @@
     <title>Nellys värld</title>
 
     <!-- Favicon -->
-     <link rel="icon" type="image/x-icon" href="../images/Nelly sol.jpg" />
+    <link rel="icon" type="image/x-icon" href="../images/Nellyfotboll.jpg" />
 
     <!-- Style sheet -->
     <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!-- JavaScript -->
+    <script src="../scripts/scripts.js"></script>
   </head>
-  
-  <body id="whole-page"> 
+
+  <body>
     <!-- Header -->
     <header>
       <a href="index.html">Nellys värld</a>
 
       <!-- Navigation -->
       <nav>
-        <a href="about.html">Om</a> 
-        <a href="galleri.html">Bildgalleri
-          <a href="godis.html">Spel
-        </a>
+        <a href="about.html">Om </a>
+        <a href="galleri.html">Bildgalleri </a>
+        <a href="godis.html">Spel </a>
       </nav>
     </header>
 
-     <!-- Footer -->
-    <footer>
-      <p>Ett studentprojekt i Webbdesign, Södertörn Högskola, 2026.</p>
-    </footer>
+    <!-- Interaktivt spel med Javascript -->
+    <main class="center-text">
+      <h2>Ge Nelly en godisbit!</h2>
 
-      <body>
+      <img
+        id="nelly-bild"
+        src="../images/Nelly12.jpg"
+        alt="Nelly väntar på godis."
+      />
+
+      <p>Nelly har fått&nbsp;<span id="antal">0</span>&nbsp;godisbitar idag.</p>
+
+      <button id="button" onclick="geGodis()">Ge en godisbit till Nelly</button>
+
+      <p id="meddelande"></p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Ett studentprojekt i Webbdesign, Södertörn Högskola, 2026. Bilder:
+        Privata.
+      </p>
+    </footer>
+  </body>
+</html>
