@@ -96,7 +96,7 @@ img {
 }
 
 #button:hover {
-  background-color:lightblue;
+  background-color: lightblue;
   cursor: pointer;
 }
 
@@ -141,13 +141,13 @@ footer {
 
 /* Dark-mode styling */
 body.dark-mode {
-  background-color:darkslateblue;
+  background-color: darkslateblue;
   color: lightcyan;
 }
 
 body.dark-mode header,
 body.dark-mode footer {
-  background-color:midnightblue;
+  background-color: midnightblue;
   color: whitesmoke;
 }
 
@@ -166,7 +166,7 @@ body.dark-mode #button {
 }
 
 body.dark-mode #button:hover {
-  background-color:lightblue;
+  background-color: lightblue;
   cursor: pointer;
 }
 
@@ -176,5 +176,5 @@ body.dark-mode #dark-button {
   border: none;
   border-radius: 8px;
   padding: 3px;
-  text-align: center; 
+  text-align: center;
 }
