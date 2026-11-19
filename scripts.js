@@ -24,18 +24,25 @@ function geGodis() {
 
 // Dark-mode
 window.onload = function () {
+  const btn = document.getElementById("dark-button");
+  
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
+    btn.innerText = "LJUST LÄGE";
   }
 };
 
 function toggleDarkMode() {
   var element = document.body;
+const btn = document.getElementById("dark-button");
+
   element.classList.toggle("dark-mode");
 
   if (element.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark");
+    btn.innerText = "LJUST LÄGE";
   } else {
     localStorage.setItem("theme", "light");
+    btn.innerText = "MÖRKT LÄGE";
   }
 }
