@@ -1,7 +1,10 @@
 /* Whole website styling */
 body {
+  padding: 25px;
   background-color: lightskyblue;
   font-family: Tahoma, sans-serif;
+  color: black;
+  font-size: 17px;
 }
 
 a {
@@ -97,8 +100,17 @@ img {
   cursor: pointer;
 }
 
+#dark-button {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  padding: 3px;
+  text-align: center;
+}
+
 /* Header and footer styling */
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: space-between;
   background-color: mediumpurple;
@@ -110,6 +122,12 @@ header, footer {
   border-radius: 8px;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 footer {
   display: flex;
   text-align: center;
@@ -117,4 +135,35 @@ footer {
   align-items: center;
   padding: 50px;
   margin-top: 50px;
+}
+
+/* Dark-mode styling */
+body.dark-mode {
+  background-color: rgb(0, 43, 69);
+  color: white;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+body.dark-mode a {
+  color: white;
+}
+
+body.dark-mode .ruta-container article {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+body.dark-mode #button {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+body.dark-mode #button:hover {
+  background-color: rgb(76, 18, 133);
+  cursor: pointer;
 }

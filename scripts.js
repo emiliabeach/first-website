@@ -1,3 +1,4 @@
+// Candy game
 let godisar = 0;
 
 function geGodis() {
@@ -18,5 +19,23 @@ function geGodis() {
   } else if (godisar >= 10) {
     meddelande.innerText = "Stopp! Nu blir Nelly alldeles för mätt och vill sova!";
     bild.src = "./images/Nellyojgodis.jpg";
+  }
+}
+
+// Dark-mode
+window.onload = function () {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+};
+
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+
+  if (element.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
   }
 }
