@@ -1,14 +1,14 @@
 /* Whole website styling */
 body {
   padding: 25px;
-  background-color: lightskyblue;
+  background-color: lightcyan;
   font-family: Tahoma, sans-serif;
-  color: black;
+  color: midnightblue;
   font-size: 17px;
 }
 
 a {
-  color: black;
+  color: darkblue;
 }
 
 /* Text styling */
@@ -52,7 +52,7 @@ img {
 
 .ruta-container article {
   flex: 1;
-  background-color: mediumpurple;
+  background-color: paleturquoise;
   padding: 15px;
   border-radius: 8px;
   text-align: center;
@@ -88,7 +88,7 @@ img {
 
 /* Button styling */
 #button {
-  background-color: mediumpurple;
+  background-color: paleturquoise;
   border: none;
   border-radius: 8px;
   padding: 15px;
@@ -96,12 +96,13 @@ img {
 }
 
 #button:hover {
-  background-color: rebeccapurple;
+  background-color:lightblue;
   cursor: pointer;
 }
 
 #dark-button {
-  background-color: whitesmoke;
+  background-color: midnightblue;
+  color: lightblue;
   border: none;
   border-radius: 8px;
   padding: 3px;
@@ -113,7 +114,8 @@ header,
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: mediumpurple;
+  background-color: paleturquoise;
+  color: midnightblue;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
@@ -139,31 +141,40 @@ footer {
 
 /* Dark-mode styling */
 body.dark-mode {
-  background-color: rgb(13, 98, 151);
-  color: white;
+  background-color:darkslateblue;
+  color: lightcyan;
 }
 
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: rebeccapurple;
-  color: white;
+  background-color:midnightblue;
+  color: whitesmoke;
 }
 
 body.dark-mode a {
-  color: white;
+  color: lightcyan;
 }
 
 body.dark-mode .ruta-container article {
-  background-color: rebeccapurple;
-  color: white;
+  background-color: midnightblue;
+  color: lightcyan;
 }
 
 body.dark-mode #button {
-  background-color: rebeccapurple;
-  color: white;
+  background-color: lightcyan;
+  color: midnightblue;
 }
 
 body.dark-mode #button:hover {
-  background-color: rgb(76, 18, 133);
+  background-color:lightblue;
   cursor: pointer;
+}
+
+body.dark-mode #dark-button {
+  background-color: lightcyan;
+  color: midnightblue;
+  border: none;
+  border-radius: 8px;
+  padding: 3px;
+  text-align: center; 
 }
