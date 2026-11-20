@@ -7,8 +7,9 @@ body {
   font-size: 17px;
 }
 
+/* Navigation styling */
 nav {
-  display: flex; 
+  display: flex;
   align-items: center;
   gap: 20px;
 }
@@ -19,7 +20,7 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -49,6 +50,26 @@ img {
   align-items: center;
 }
 
+#nelly-bild {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.ruta-container img {
+  width: 100%;
+  height: auto;
+}
+
+.galleri-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Layout styling */
 .ruta-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -66,11 +87,6 @@ img {
   text-align: center;
 }
 
-.ruta-container img {
-  width: 100%;
-  height: auto;
-}
-
 .galleri-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -78,20 +94,6 @@ img {
   max-width: 2000px;
   margin: 10px;
   padding: 10px;
-}
-
-.galleri-container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-#nelly-bild {
-  width: 400px;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 15px;
 }
 
 /* Button styling */
@@ -133,6 +135,9 @@ footer {
   border-radius: 8px;
 }
 
+header a:hover {
+  text-decoration: underline;
+}
 
 .header-left {
   display: flex;
@@ -144,10 +149,6 @@ footer {
   color: darkblue;
   text-decoration: none;
   font-weight: bold;
-}
-
-header a:hover{
-  text-decoration: underline;
 }
 
 footer {
@@ -201,12 +202,13 @@ body.dark-mode #dark-button {
 
 /* Responsive design */
 @media (max-width: 768px) {
+
   body {
     padding: 10px;
   }
 
   header {
-    flex-direction:row;
+    flex-direction: row;
     gap: 15px;
     padding: 20px;
     text-align: center;
@@ -222,7 +224,7 @@ body.dark-mode #dark-button {
     justify-content: center;
     gap: 12px;
   }
-  
+
   .ruta-container {
     grid-template-columns: 1fr;
     margin: 0;
@@ -236,7 +238,7 @@ body.dark-mode #dark-button {
     padding: 5px;
   }
 
-  #nelly-bild, 
+  #nelly-bild,
   img {
     width: 100%;
     max-width: 400px;
