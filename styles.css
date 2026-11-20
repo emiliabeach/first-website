@@ -7,21 +7,29 @@ body {
   font-size: 17px;
 }
 
-a {
+nav {
+  display: flex; 
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
   color: darkblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+  text-decoration: underline;
 }
 
 /* Text styling */
 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .center-text {
@@ -114,6 +122,7 @@ header,
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: paleturquoise;
   color: midnightblue;
   padding-left: 50px;
@@ -124,10 +133,21 @@ footer {
   border-radius: 8px;
 }
 
+
 .header-left {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.header-left a {
+  color: darkblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover{
+  text-decoration: underline;
 }
 
 footer {
@@ -177,4 +197,53 @@ body.dark-mode #dark-button {
   border-radius: 8px;
   padding: 3px;
   text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction:row;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .ruta-container {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .galleri-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  #nelly-bild, 
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  footer {
+    padding: 20px;
+  }
 }
