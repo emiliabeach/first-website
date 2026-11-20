@@ -200,7 +200,7 @@ body.dark-mode #dark-button {
   text-align: center;
 }
 
-/* Responsive design */
+/* Responsive design, för att passa mindre utrymme */
 @media (max-width: 768px) {
 
   body {
@@ -225,12 +225,14 @@ body.dark-mode #dark-button {
     gap: 12px;
   }
 
+  /* Ändrar rutnätet för faktarutorna från tre kolumner till en kolumn */
   .ruta-container {
     grid-template-columns: 1fr;
     margin: 0;
     padding: 5px;
   }
 
+  /* Ändrar bildgalleriet från fyra kolumner till två kolumner, så bilderna syns bra */
   .galleri-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
